@@ -1,13 +1,51 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  /* Root color - Purple 500 */
+  --purple-500: #733fc8;
+
+  /* Base colors */
+  --black: #121212;
+  --dark-blue: #19202d;
+  --white: #ffffff;
+  --background: #f6f6f6;
+
+  /* Grey scale */
+  --grey-100: #e7eaee;
+  --grey-200: #cfcfcf;
+  --grey-400: #676d7e;
+  --grey-500: #48556a;
+
+  /* Purple scale */
+  --purple-50: #ede4ff;
+  --purple-300: #a775f1;
+
+  /* Typography */
+  /* text-preset-1: Barlow Semi Condensed Semibold (600), 20px, 120% line height */
+  --text-preset-1: 600 1.25rem/1.2 "Barlow Semi Condensed", sans-serif;
+
+  /* text-preset-2: Barlow Semi Condensed Medium (500), 13px, 110% line height */
+  --text-preset-2: 500 0.8125rem/1.1 "Barlow Semi Condensed", sans-serif;
+
+  /* text-preset-3: Barlow Semi Condensed Medium (500), 13px, 140% line height */
+  --text-preset-3: 500 0.8125rem/1.4 "Barlow Semi Condensed", sans-serif;
+
+  /* text-preset-4: Barlow Semi Condensed Medium (500), 11px, 110% line height */
+  --text-preset-4: 500 0.6875rem/1.1 "Barlow Semi Condensed", sans-serif;
+
+  /* text-preset-5: Barlow Semi Condensed Medium (500), 16px, 18px line height */
+  --text-preset-5: 500 1rem/1.125 "Barlow Semi Condensed", sans-serif;
+
+  /* Body copy - 13px */
+  --body-copy: 500 0.8125rem/1.4 "Barlow Semi Condensed", sans-serif;
+
+  /* Spacing */
+  --spacing-50: 0.25rem; /* 4px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-500: 2.5rem; /* 40px */
 }
 
 html,
@@ -17,9 +55,9 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font: var(--body-copy);
+  color: var(--grey-500);
+  background-color: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,10 +71,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
