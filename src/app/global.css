@@ -55,9 +55,10 @@ body {
 }
 
 body {
-  font: var(--body-copy);
-  color: var(--grey-500);
-  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

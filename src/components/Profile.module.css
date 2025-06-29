@@ -1,0 +1,53 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  max-width: 305px;
+  width: 100%;
+  padding: var(--spacing-400);
+  border-radius: var(--spacing-100);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--spacing-200);
+}
+
+.avatar {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Specific avatar styles for card 1 and card 3 */
+.avatarCard1 {
+  border: 2px solid var(--purple-300);
+}
+
+.avatarCard4 {
+  border: 2px solid var(--purple-500);
+}
+
+.name {
+  font: var(--text-preset-1);
+  color: var(--white);
+}
+.title {
+  font: var(--text-preset-4);
+  color: var(--white);
+}
+.quote {
+  font: var(--text-preset-1);
+  color: var(--white);
+  margin-top: var(--spacing-200);
+}
+.text {
+  font: var(--text-preset-3);
+  color: var(--purple-50);
+  margin-top: var(--spacing-200);
+}
