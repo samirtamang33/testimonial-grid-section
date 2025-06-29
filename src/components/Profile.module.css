@@ -51,3 +51,10 @@
   color: var(--purple-50);
   margin-top: var(--spacing-200);
 }
+
+@media (min-width: 768px) {
+  .profile {
+    max-width: 647px;
+    width: 100%;
+  }
+}
