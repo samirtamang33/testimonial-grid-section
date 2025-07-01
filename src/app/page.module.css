@@ -63,8 +63,8 @@
     max-width: 1114px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
     column-gap: var(--spacing-400);
     row-gap: var(--spacing-200);
     grid-template-areas:
@@ -112,7 +112,7 @@
   .card5 {
     grid-area: card5;
     width: 255px;
-    height: 584px;
+    height: 582px;
     max-width: unset;
     min-width: unset;
   }
